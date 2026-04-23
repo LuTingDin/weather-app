@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather App</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="app">
+            <header>
+                <h1>Weather App</h1>
+            </header>
+
+            <main>
+                <section class="search-section">
+                    <input type="text" id="city-input" placeholder="Enter city name">
+                    <button id="search-btn">Search</button>
+                </section>
+
+                <section class="unit-toggle-section">
+                    <button id="unit-toggle">°C / °F</button>
+                </section>
+
+                <section class="weather-display">
+                    <div id="loading" class="hidden">載入中...</div>
+                    <div id="error-message" class="hidden"></div>
+                    
+                    <h2>目前天氣</h2>
+                    <div class="current-weather-card hidden">
+                        <div class="weather-main">
+                            <h2 id="city-name"></h2>
+                            <p id="weather-description"></p>
+                        </div>
+                        <div class="weather-icon-wrap">
+                            <img id="weather-icon" src="" alt="weather icon">
+                        </div>
+                        <div class="weather-stats">
+                            <div class="stat">
+                                <span class="stat-label">溫度：</span>
+                                <span class="stat-value temp" id="temprature">--<span class="stat-unit">°C</span></span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">濕度：</span>
+                                <span class="stat-value" id="humidity">--<span class="stat-unit">%</span></span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-label">風速：</span>
+                                <span class="stat-value" id="wind-speed">--<span class="stat-unit">m/s</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="hourly-forecast-section hidden">
+                    <h2>當日預報</h2>
+                    <div id="hourly-forecast-container"></div>
+                </section>
+
+                <section class="forecast-section hidden">
+                    <h2>五日預報</h2>
+                    <div id="forecast-container"></div>
+                </section>
+
+                <div id="recent-section">
+                    <span class="recent-label">最近搜尋</span>
+                    <div id="recent-searches"></div>
+                </div>
+            </main>
+
+            <footer>
+                <p>&copy; 2025 Weather App. All rights reserved.</p>
+            </footer>
+        </div>
+
+        <script type="module" src="js/app.js"></script>
+    </body>
+</html>
