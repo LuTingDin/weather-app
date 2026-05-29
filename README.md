@@ -1,8 +1,10 @@
 # Weather App
 
-**Live Demo:** https://lutingdin.github.io/weather-app/
-
 A responsive weather application built with vanilla JavaScript, HTML, and CSS. Focused on real-world API integration, asynchronous data handling, and a polished glassmorphism UI.
+
+**[Live Demo](https://lutingdin.github.io/weather-app/)** | **[GitHub](https://github.com/LuTingDin/weather-app)**
+
+![Expense Tracker Screenshot](screenshot.png)
 
 ## Features
 
